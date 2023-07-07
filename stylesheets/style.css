@@ -1,0 +1,395 @@
+/* Category: General Styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Category: Root Variable Styles */
+:root {
+  --color-1: black;
+  --color-2: lightgray;
+  --color-3: whitesmoke;
+}
+
+/* Category: Typography Styles */
+h1 {
+  position: relative;
+  z-index: 2;
+}
+
+h2 {
+  font-size: 3.4vh;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h5 {
+  margin-top: 1.5vh;
+}
+
+label {
+  display: block;
+  font-size: small;
+  text-align: right;
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+  margin: 0;
+  padding: 0;
+  text-align: inherit;
+  cursor: pointer;
+  transition: color 0.5s ease;
+  display: inline-flex;
+  align-items: center;
+  height: 100%;
+}
+
+.text-red {
+  color: #950F22;
+}
+
+.text-blue {
+  color: #077995;
+}
+
+.links-card-title {
+  margin-top: 1.5vh
+}
+
+/* Category: Responsive Styles */
+@media screen and (max-width: 600px) {
+  .modal-content {
+    width: 90%;
+    max-width: none;
+  }
+}
+
+@media (min-width: 768px) {
+  #bookshelf .card-columns {
+    column-gap: 1rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .container-vertical-center {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+  }
+}
+
+/* Category: Grid System */
+.col-lg-6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+/* Category: Modal Styles */
+.container {
+  transition: filter 0.5s;
+  position: relative;
+  z-index: 1;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  overflow-y: auto;
+}
+
+.modal-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+}
+
+.modal-content {
+  background-color: #FFFFFF;
+  color: black;
+  padding: 20px;
+  border-radius: 0px;
+  text-align: center;
+  max-width: 400px;
+  margin: auto;
+  border: none;
+  border-radius: 0;
+}
+
+/* Category: Progress Styles */
+.progress-wrapper {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.progress {
+  height: 20px;
+  background-color: transparent;
+}
+
+.progress-bar {
+  background-color: black;
+  text-align: left;
+  transition: background-color 0.25s ease-in 0.1s, filter 0.3s ease-in;
+}
+
+.bg-red {
+  background-color: #950F22;
+}
+
+.progress-bar:hover {
+  cursor: pointer;
+  background-color: whitesmoke !important;
+  color: black;
+  transition: color 0.25s ease-in 0.1s, filter 0.3s ease-in;
+  transition: background-color 0.25s ease-out 0.1s, filter 0.3s ease-out;
+}
+
+/* Category: Timeline Styles */
+.timeline-parent-container {
+  display: flex;
+  justify-content: center;
+}
+
+.timeline {
+  margin: 4em 0;
+  position: relative;
+  max-width: 46em;
+}
+
+.timeline:before {
+  background-color: var(--color-1);
+  content: '';
+  margin-left: -1px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 100%;
+}
+
+.timeline-event {
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+.timeline-event-icon {
+  transition: transform 0.2s ease-in;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background-color: var(--color-1);
+  outline: 4px solid var(--color-2);
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1em;
+  height: 1em;
+}
+
+.timeline-event-copy {
+  padding: 2em;
+  position: relative;
+  margin-left: 60%;
+  width: 100%;
+  text-align: left;
+}
+
+.timeline-event-copy h3 {
+  font-size: 1.75em;
+}
+
+.timeline-event-copy h4 {
+  font-size: 1.2em;
+  margin-bottom: 1.2em;
+}
+
+.timeline-event-copy strong {
+  font-weight: 700;
+}
+
+.timeline-event-copy p:not(.timeline-event-thumbnail) {
+  padding-bottom: 1.2em;
+}
+
+.timeline-event:hover .timeline-event-icon {
+  transform: translate(-50%, -50%) rotate(135deg);
+  background-color: var(--color-3);
+}
+
+.timeline-event:hover .timeline-event-thumbnail {
+  box-shadow: inset 40em 0 0 0 var(--color-3);
+}
+
+.timeline-event-thumbnail {
+  transition: box-shadow 0.5s ease-in 0.1s;
+  color: var(--color-2);
+  font-size: 0.75em;
+  background-color: var(--color-1);
+  box-shadow: inset 0 0 0 0em rgb(87, 87, 87);
+  display: inline-block;
+  margin-bottom: 1.2em;
+  padding: 0.25em 1em 0.2em 1em;
+}
+
+/* Category: Circular Chart Styles */
+.circular-chart {
+  display: block;
+  margin: 10px auto;
+  max-width: 80%;
+  max-height: 250px;
+}
+
+.circle-bg {
+  stroke: #efefef;
+}
+
+.circle-1,
+.circle-2,
+.circle-3 {
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+/* Category: Specific Element Styles */
+/* Specific Element Styles: Bookshelf */
+#bookshelf .card {
+  border: none;
+  margin-bottom: 20px;
+  transition: transform 0.7s, z-index 0s 0.7s;
+  position: relative;
+  z-index: 1;
+}
+
+.links-card-title {
+  margin-top: 1.5vh;
+}
+
+#bookshelf .card:hover {
+  transform: scale(1.1);
+  z-index: 1;
+  transition-delay: 0s;
+}
+
+#bookshelf .card-columns {
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  #bookshelf .card-columns {
+    column-gap: 1rem;
+  }
+}
+
+.hover_color_bubble {
+  position: absolute;
+  background: rgb(54 81 207 / 15%);
+  width: 100rem;
+  height: 100rem;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  top: 16rem;
+  border-radius: 50%;
+  transform: rotate(-36deg);
+  left: -18rem;
+  transition: 0.7s;
+}
+
+#bookshelf .card:hover .hover_color_bubble {
+  top: 0rem;
+}
+
+/* Specific Element Styles: Dropdown-menu and Form Controls */
+
+.dropdown-menu,
+.form-control {
+  border: none;
+  width: 100%;
+}
+
+.dropdown-menu input:focus {
+  border-color: lightgray;
+  box-shadow: 0 0 5px lightgray;
+  outline: none;
+}
+
+.dropdown-menu label {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.form-group,
+.dropdown-menu {
+  background-color: transparent;
+  width: 100%;
+}
+
+.navbar-nav .dropdown-menu .input-group input[type="text"] {
+  background-color: white;
+  border: none;
+  box-shadow: none;
+}
+
+.navbar-nav .dropdown-menu .input-group input[type="text"]:focus {
+  box-shadow: 0 0 0 0.2rem rgba(200, 200, 200, 0.5);
+  outline: none;
+}
+
+/* Specific Element Styles: Anchor */
+a {
+  color: #950F22;
+  transition: box-shadow 0.5s ease-in 0.1s, filter 0.3s ease-in;
+}
+
+a:hover {
+  color: whitesmoke;
+  filter: grayscale(70%) brightness(70%);
+}
+
+/* Specific Element Styles: Selection */
+::selection {
+  background-color: lightgray;
+  color: black;
+}
+
+/* Specific Element Styles: ASCII */
+#ascii {
+  display: grid;
+  grid-template-columns: minmax(min-content, 1fr);
+  padding-right: 0; /* mobile left tail still present */
+}
+
+#ascii pre {
+  display: block;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  justify-self: center;
+  transition: font-size 1s;
+}

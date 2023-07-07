@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>HAH</title>
+   <meta name="resume" content="Resume page">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   <link rel="stylesheet" href="stylesheets/style.css">
+   <link rel="shortcut icon" type="image/png" href="/content/favicon.ico">
+</head>
+
+<body>
+   <nav class="navbar navbar-expand navbar-light bg-light">
+      <a class="navbar-brand" href="#">HAH</a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+         <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="/index">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="/resume">Resume</a></li>
+            <li class="nav-item"><a class="nav-link" href="/links">Links</a></li>
+            <li class="nav-item"><a class="nav-link" href="/shelf">Shelf</a></li>
+         </ul>
+      </div>
+   </nav>
+   <div class="container">
+      <h1 class="text-center" style="margin-top: 3vh; margin-bottom: -3vh;">Resume</h1>
+      <div class="timeline-parent-container">
+         <div class="timeline">
+            <div class="timeline-event">
+               <div class="timeline-event-icon"></div>
+               <div class="timeline-event-copy">
+                  <h3>Pending</h3>
+                  <p class="small">May 2023</p>
+                  <p class="timeline-event-thumbnail"></p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <h2 class="text-red text-center" style="margin-top: -3vh;">
+         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-mortarboard" viewBox="0 0 16 16">
+            <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5ZM8 8.46 1.758 5.965 8 3.052l6.242 2.913L8 8.46Z"/>
+            <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Zm-.068 1.873.22-.748 3.496 1.311a.5.5 0 0 0 .352 0l3.496-1.311.22.748L8 12.46l-3.892-1.556Z"/>
+         </svg>
+         &nbsp;University&nbsp;
+         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-mortarboard" viewBox="0 0 16 16">
+            <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5ZM8 8.46 1.758 5.965 8 3.052l6.242 2.913L8 8.46Z"/>
+            <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Zm-.068 1.873.22-.748 3.496 1.311a.5.5 0 0 0 .352 0l3.496-1.311.22.748L8 12.46l-3.892-1.556Z"/>
+         </svg>
+      </h2>
+      <p class="lead text-center">Graduated May 2023</p>
+      <div class="progress-wrapper">
+         <div class="progress rounded-0">
+            <div class="progress-bar ml-auto" role="progressbar" style="width: 49%; cursor: auto !important;" aria-valuenow="49" aria-valuemin="0" aria-valuemax="100">
+               <div class="progress-value">&nbsp;August 2021</div>
+            </div>
+         </div>
+         <label>Digital Humanities Forum Committee</label>
+      </div>
+      <div class="progress-wrapper">
+         <div class="progress rounded-0">
+            <div class="progress-bar ml-auto" role="progressbar" style="width: 22%; cursor: auto !important;" aria-valuenow="22" aria-valuemin="0" aria-valuemax="100">
+               <div class="progress-value">&nbsp;August 2022</div>
+            </div>
+         </div>
+         <label>Diversity, Equity, and Inclusion Committee</label>
+      </div>
+      <div class="progress-wrapper" onclick="openModal('ohioLinkModal')">
+         <div class="progress rounded-0">
+            <div class="progress-bar ml-auto" role="progressbar" style="width: 49%;" aria-valuenow="49" aria-valuemin="0" aria-valuemax="100">
+               <div class="progress-value">&nbsp;August 2021</div>
+            </div>
+         </div>
+         <label>OhioLINK Luminary</label>
+      </div>
+      <div class="progress-wrapper" onclick="openModal('baComputerScienceModal')">
+         <div class="progress rounded-0">
+            <div class="bg-red progress-bar ml-auto" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+               <div class="progress-value">&nbsp;August 2019</div>
+            </div>
+         </div>
+         <label>B.A. Computer Science - Miami University</label>
+      </div>
+      <div class="progress-wrapper" onclick="openModal('teachingAssistantModal')">
+         <div class="progress rounded-0">
+            <div class="progress-bar ml-auto" role="progressbar" style="width: 29%;" aria-valuenow="29" aria-valuemin="0" aria-valuemax="100">
+               <div class="progress-value">&nbsp;May 2022</div>
+            </div>
+         </div>
+         <label>Teaching Assistant</label>
+      </div>
+   </div>
+   <div id="ohioLinkModal" class="modal">
+      <div class="modal-content">
+         <h3>Luminary</h3>
+         <p class="lead text-center">OhioLINK</p>
+         <h4>Internal Automated Tool Development</h4>
+         <p class="small">ChromeBook activation and deactivation processes.<br>Node.js; Google Cloud Platform; RESTful API; ILS</p>
+         <h4>Vendor License Recommendations</h4>
+         <p class="small">Actionable, priority suggestions for 58 vendor licenses.<br>Contract Analysis; Policy Compliance; Negotiation</p>
+         <h4>Department Productivity Analysis</h4>
+         <p class="small">Impacts of COVID-19 illustrated via fiscal expenditure.<br>Inference; Regression; Data Visualization; Brand Guide; R; ILS</p>
+         <h4><a href="https://findingfreedom.lib.miamioh.edu">Front-End Web Development</a></h4>
+         <p class="small">Finding Freedom Summer Traveling Exhibit<br>HTML; CSS; Bootstrap; Jekyll</p>
+         <h4>Metadata Generation</h4>
+         <p class="small">Documenting the COVID-19 Pandemic born-digital collection.<br>Metadata Standards and Best Practices; Controlled Vocabulary and Taxonomy Management</p>
+         <a href="https://www.lib.miamioh.edu/2022-04-08-reflections-from-a-luminary-a-student-employee-blog">
+            <h4>Article Serialization</h4>
+         </a>
+         <p class="small">Reflections from a Luminary: a student employee blog.<br>Interactive Elements; Thematic Consistency; Storytelling</p>
+         <h4>Mentorship</h4>
+         <p class="small">Mentorship of Year One luminary.<br>Strengths-Based Approach; Active Listening; Socratic Questioning</p>
+      </div>
+   </div>
+   <div id="baComputerScienceModal" class="modal">
+      <div class="modal-content">
+         <h3 class="head text-center">Miami University</h3>
+         <p class="text-center small">August 2019 - May 2023</p>
+         <p>Bachelor of <kbd>Arts</kbd></p>
+         <p>Major in <kbd>Computer Science</kbd></p>
+         <p>Minor in <kbd>Commerce</kbd></p>
+         <p>Thematic Sequence of <kbd>LUX 3</kbd></p>
+         <p class="small">*European Culture and Society</p>
+      </div>
+   </div>
+   <div id="teachingAssistantModal" class="modal">
+      <div class="modal-content">
+         <h3>Teaching Assistant</h3>
+         <p class="lead text-center">College of Engineering and Computing</p>
+         <div class="progressContainer">
+            <div class="progressContainer">
+               <svg viewBox="0 0 36 36" class="circular-chart">
+                  <circle class="circle-3" cx="18" cy="18" r="15.9155" fill="none" stroke="#950F22" stroke-width="2" stroke-dasharray="73, 27" stroke-dashoffset="0"></circle>
+                  <circle class="circle-2" cx="18" cy="18" r="15.9155" fill="none" stroke="#077995" stroke-width="2" stroke-dasharray="17, 83" stroke-dashoffset="17.5"></circle>
+                  <circle class="circle-1" cx="18" cy="18" r="15.9155" fill="none" stroke="#6c757d" stroke-width="2" stroke-dasharray="10, 90" stroke-dashoffset="26.5"></circle>
+               </svg>
+               <div class="labelContainer small">
+                  <span class="label text-blue">
+                  Technology, Ethics, and Global Society
+                  </span><br>
+                  <span class="label text-red">
+                  Software Engineering for User Interface and User Experience Design
+                  </span><br>
+                  <span class="label text-secondary">
+                  Introduction to Software Engineering
+                  </span>
+               </div>
+            </div>
+         </div>
+         <div id="overlay"></div>
+      </div>
+   </div>
+   <script src="scripts/modal.js"></script>
+</body>
+</html>
